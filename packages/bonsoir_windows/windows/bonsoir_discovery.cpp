@@ -55,7 +55,7 @@ namespace bonsoir_windows {
       return;
     }
 
-    auto queryName = toUtf16(servicePtr->name + "." + servicePtr->type + ".local");
+    auto queryName = toUtf16(servicePtr->name + "." + servicePtr->type);
     DNS_SERVICE_RESOLVE_REQUEST resolveRequest{};
     DNS_SERVICE_CANCEL resolveCancelHandle{};
     resolveRequest.Version = DNS_QUERY_REQUEST_VERSION1;
